@@ -14,4 +14,11 @@ public class LeapyearTest {
 		boolean result = Leapyear.checkYear(2000);
 		assertEquals(msg, true, result);
 	}
+	
+	@Test
+	public void  isMultipleof400andNot100() {
+		String msg = "Year 1700  should not be a leap year.";
+		boolean result = Leapyear.checkYear(1700);
+		assertEquals(msg, false, result);
+	}
 }

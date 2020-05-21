@@ -24,8 +24,15 @@ public class LeapyearTest {
 	
 	@Test
 	public void  isMultipleof4andNot100() {
-		String msg = "Year 2008  should not be a leap year.";
+		String msg = "Year 2008  should be a leap year.";
 		boolean result = Leapyear.checkYear(2008);
 		assertEquals(msg, true, result);
+	}
+	
+	@Test
+	public void  isMultipleofNot4() {
+		String msg = "Year 2017  should not be a leap year.";
+		boolean result = Leapyear.checkYear(2017);
+		assertEquals(msg, false, result);
 	}
 }

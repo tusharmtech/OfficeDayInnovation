@@ -10,8 +10,8 @@ public class LeapyearTest {
 
 	@Test
 	public void  isMultipleof400() {
-		String msg = "Year 400 should be a leap year.";
-		boolean result = Leapyear.checkYear(400);
+		String msg = "Year 2000  should be a leap year.";
+		boolean result = Leapyear.checkYear(2000);
 		assertEquals(msg, true, result);
 	}
 }
